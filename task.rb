@@ -40,10 +40,10 @@ class Task
 
   def self.build_task(row)
     task_attributes = {
-      id: row["id"],
-      title: row["title"],
+      id:          row["id"],
+      title:       row["title"],
       description: row["description"],
-      done: row["done"] == 1
+      done:        row["done"] == 1
     }
     Task.new(task_attributes)
   end
